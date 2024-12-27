@@ -15,8 +15,9 @@ class WelcomeController extends Controller
     {
         $oauthService = new OAuthService(config('entrada'));
         $auth = $oauthService->authUser();
-        var_dump($oauthService->getUserInfo($auth->access_token));
+        $userInfo = collect($oauthService->getUserInfo($auth->access_token));
 
+        echo $userInfo->displayName;
         echo view("html/welcome")->render();
     }
 

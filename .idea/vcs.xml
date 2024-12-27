@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework/library/Collection" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework/library/SiDateTime" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework/library/SiValidator2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/Collection" vcs="Git" />
   </component>
 </project>

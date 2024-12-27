@@ -18,6 +18,6 @@ class TenantValidationMiddleware extends Middleware implements
     {
         $oauthService = new OAuthService(config('entrada'));
         $auth = $oauthService->authUser();
-        return in_array($oauthService->getTidFromIdToken($auth->access_token), config('entrada.arrow_tenant_ids'));
+        return in_array($oauthService->getTidFromIdToken($auth->access_token), config('entrada.arrow_tenant_ids'),true);
     }
 }

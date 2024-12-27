@@ -18,7 +18,6 @@ class RefreshTokenMiddleware extends Middleware implements
     {
         $oauthService = new OAuthService(config('entrada'));
         $user = $oauthService->authUser();
-
         if ($user) {
             $crypt   = spiral()->getSpiralCryptOpenSsl();
             $expiresAt = new SiDateTime($user->token_expires_at);

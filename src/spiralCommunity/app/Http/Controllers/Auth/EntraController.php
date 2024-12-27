@@ -69,6 +69,10 @@ class EntraController extends Controller
 
         $crypt   = spiral()->getSpiralCryptOpenSsl();
 
+        if(! in_array((new OAuthService(config('entrada')))->getTidFromIdToken($accessToken), config('entrada.arrow_tenant_ids'),true) ){
+            throw new \Exception('許可されていないテナントです', 500);
+        }
+
         // ユーザーの登録またはログイン
         \SpiralDB::title('users')->upsert(
             'provider_id',
