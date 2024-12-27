@@ -1,0 +1,3 @@
+[submodule "spiral-framework"]
+	path = spiral-framework
+	url = git@github.com:itoh-shun/spiral-framework.git

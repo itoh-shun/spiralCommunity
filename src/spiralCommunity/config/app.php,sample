@@ -1,0 +1,38 @@
+<?php
+const APP_URL = '';
+const KEY = '';
+const CLIENT_ID = '';
+const CLIENT_SECRET = '';
+const TENANT_ID = '';
+const ARROW_TENANT_IDS = [
+];
+return [
+    "debug" => false,
+    "name" => "spiralCommunity",
+    "timezone" => "Asia/Tokyo",
+    "locale" => "ja",
+    'login' => [
+        'url' => APP_URL,
+        "title" => "",
+    ],
+    'crypt' => [
+        'key' => KEY
+    ],
+    'entrada' => [
+        'client_id' => CLIENT_ID,
+        'client_secret' => CLIENT_SECRET,
+        'redirect' => APP_URL.'?_path=auth/entra/callback',
+        'tenant_id' => TENANT_ID,
+        'auth_url' => "https://login.microsoftonline.com/common/oauth2/v2.0/authorize",
+        'token_url' => "https://login.microsoftonline.com/common/oauth2/v2.0/token",
+        'user_info_url' => 'https://graph.microsoft.com/v1.0/me',
+        'scopes' => [
+            "openid",
+            "profile",
+            "email",
+            "offline_access",
+            "User.Read"
+        ],
+        'arrow_tenant_ids' => ARROW_TENANT_IDS
+    ],
+];

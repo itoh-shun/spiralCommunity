@@ -1,0 +1,5 @@
+/vendor/
+.tmp/
+
+src/spiralCommunity/config/app.php
+.env.php
