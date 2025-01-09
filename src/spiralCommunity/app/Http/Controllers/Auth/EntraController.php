@@ -9,6 +9,7 @@ use framework\Http\Session\Session;
 use framework\Routing\Router;
 use framework\Support\ServiceProvider;
 use SiLibrary\SiDateTime;
+use SiLibrary\SpiralConnecter\HttpRequest;
 use SiLibrary\SpiralConnecter\SpiralWeb;
 use spiralCommunity\App\Services\OAuthService;
 
@@ -34,7 +35,8 @@ class EntraController extends Controller
 
         $authorizationUrl = $this->oauthService->getAuthorizationUrl($state);
 
-        return Router::urlRedirect($authorizationUrl);
+        Router::urlRedirect($authorizationUrl);
+        exit;
     }
 
     // コールバックの処理
@@ -67,26 +69,12 @@ class EntraController extends Controller
             throw new \Exception($e->getMessage(), 500);
         }
 
-        $crypt   = spiral()->getSpiralCryptOpenSsl();
-
         if(! in_array((new OAuthService(config('entrada')))->getTidFromIdToken($accessToken), config('entrada.arrow_tenant_ids'),true) ){
             throw new \Exception('許可されていないテナントです', 500);
         }
 
-        // ユーザーの登録またはログイン
-        \SpiralDB::title('users')->upsert(
-            'provider_id',
-            [
-                'email' => $userInfo['mail'],
-                'provider' => 'entra',
-                'provider_id' => $sub ?? null,
-                'access_token' => $crypt->encrypt($accessToken, config('crypt.key')),
-                'refresh_token' => $crypt->encrypt($refreshToken, config('crypt.key')),
-                'token_expires_at' => $tokenExpiresAt->format('Y-m-d H:i:s'),
-            ]
-        );
+        $this->oauthService->save($sub, $accessToken,$refreshToken, $tokenExpiresAt);
 
-        // ログインAPIを呼び出す
         try {
             $redirectUrl = $this->callLoginApi($sub);
         } catch (\Exception $e) {

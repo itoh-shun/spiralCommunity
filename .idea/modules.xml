@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/spiral-community.iml" filepath="$PROJECT_DIR$/.idea/spiral-community.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spiralCommunity.iml" filepath="$PROJECT_DIR$/.idea/spiralCommunity.iml" />
     </modules>
   </component>
 </project>

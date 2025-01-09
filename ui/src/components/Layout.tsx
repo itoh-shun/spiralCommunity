@@ -1,9 +1,8 @@
 // src/components/Layout.js
+import { CloudCircle } from "@mui/icons-material";
+import { Chip, Container, Stack, Typography } from "@mui/material";
+import { DashboardLayout } from "@toolpad/core";
 import { Outlet } from 'react-router-dom';
-import { DashboardLayout} from "@toolpad/core";
-import {Chip, createTheme, Stack, Typography} from "@mui/material";
-import {CloudCircle} from "@mui/icons-material";
-import {AppProvider} from "@toolpad/core/AppProvider";
 
 
 function CustomAppTitle() {
@@ -16,35 +15,27 @@ function CustomAppTitle() {
     );
 }
 
-const demoTheme = createTheme({
-    cssVariables: {
-        colorSchemeSelector: 'data-toolpad-color-scheme',
-    },
-    colorSchemes: { light: true, dark: true },
-    breakpoints: {
-        values: {
-            xs: 0,
-            sm: 600,
-            md: 600,
-            lg: 1200,
-            xl: 1536,
-        },
-    },
-});
 const Layout = () => {
     return (
-        <AppProvider
-            router={router}
-            theme={demoTheme}
-            window={demoWindow}
-        >
         <DashboardLayout hideNavigation
+                         slotProps={ {
+                             toolbarAccount: {
+                                 slotProps: {
+                                     signInButton: {
+                                         sx: {
+                                             display: "none"
+                                         }
+                                     },
+                                 },
+                             }
+                         } }
          slots={{
              appTitle: CustomAppTitle,
          }}>
-            <Outlet />
+            <Container sx={ { mt: 2 } }>
+                <Outlet/>
+            </Container>
         </DashboardLayout>
-        </AppProvider>
     );
 };
 

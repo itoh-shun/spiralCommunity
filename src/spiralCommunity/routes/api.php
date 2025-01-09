@@ -30,8 +30,8 @@ $router = new Router();
 //$router->middleware();毎回必ずチェックする場合はこっち
 $app = new spiralCommunity\spiralCommunityApplication();
 $exceptionHandler = new spiralCommunity\App\Exceptions\ExceptionHandler();
-$kernel = new \framework\Http\Kernel($app, $router ,$exceptionHandler);
-$request = new \framework\Http\Request();
+$kernel = new framework\Http\Kernel($app, $router ,$exceptionHandler);
+$request = new framework\Http\Request();
 
 $kernel->handle($request);
 

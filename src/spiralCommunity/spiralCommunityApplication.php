@@ -3,7 +3,7 @@
 namespace spiralCommunity;
 
 use framework\Application;
-use SiLibrary\SpiralConnecter\SpiralRedis;
+use framework\Library\SpiralConnecter\SpiralRedis;
 
 class spiralCommunityApplication extends Application
 {
@@ -15,6 +15,6 @@ class spiralCommunityApplication extends Application
 
     public function boot()
     {
-        \SpiralDB::setCache(new SpiralRedis());
+        //\SpiralDB::setCache(new SpiralRedis());
     }
 }

@@ -6,7 +6,6 @@ namespace spiralCommunity\App\Http\Middleware;
 use framework\Http\Middleware\Middleware;
 use framework\Http\Middleware\MiddlewareInterface;
 use framework\Routing\Router;
-use SiLibrary\Collection;
 use SiLibrary\SiDateTime;
 use SiLibrary\SpiralConnecter\SpiralWeb;
 use spiralCommunity\App\Services\OAuthService;
@@ -25,21 +24,11 @@ class RefreshTokenMiddleware extends Middleware implements
 
             if ($expiresAt && SiDateTime::now()->addSeconds($bufferTime)->isAfter($expiresAt)){
                 $refreshToken = $user->refresh_token ?: null;
-
                 if ($refreshToken) {
-
                     try {
                         $newTokens = $oauthService->refreshAccessToken($refreshToken);
 
-                        // 新しいトークンを保存
-                        \SpiralDB::title('users')->upsert(
-                            'provider_id',
-                            [
-                                'access_token' => $crypt->encrypt($newTokens['access_token'], config('crypt.key')),
-                                'refresh_token' => isset($newTokens['refresh_token']) ? $crypt->encrypt($newTokens['refresh_token'],config('crypt.key')) : $user->refresh_token,
-                                'token_expires_at' => SiDateTime::now()->addSeconds($newTokens['expires_in'])->format('Y-m-d H:i:s'),
-                            ]
-                        );
+                        $oauthService->save($user->provider_id, $newTokens['access_token'],$newTokens['refresh_token'] , SiDateTime::now()->addSeconds($newTokens['expires_in'])->format('Y-m-d H:i:s'));
 
                         return true;
 

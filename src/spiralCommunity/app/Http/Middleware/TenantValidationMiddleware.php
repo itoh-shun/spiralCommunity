@@ -6,9 +6,6 @@ namespace spiralCommunity\App\Http\Middleware;
 use framework\Http\Middleware\Middleware;
 use framework\Http\Middleware\MiddlewareInterface;
 use framework\Routing\Router;
-use SiLibrary\Collection;
-use SiLibrary\SiDateTime;
-use SiLibrary\SpiralConnecter\SpiralWeb;
 use spiralCommunity\App\Services\OAuthService;
 
 class TenantValidationMiddleware extends Middleware implements

@@ -3,7 +3,6 @@
   <component name="PHPUnit">
     <option name="directories">
       <list>
-        <option value="$PROJECT_DIR$/tests" />
         <option value="$PROJECT_DIR$/spiral-framework/library/Collection/tests" />
         <option value="$PROJECT_DIR$/spiral-framework/tests" />
       </list>
