@@ -1,16 +1,16 @@
 // src/components/Layout.js
-import { CloudCircle } from "@mui/icons-material";
-import { Chip, Container, Stack, Typography } from "@mui/material";
-import { DashboardLayout } from "@toolpad/core";
-import { Outlet } from 'react-router-dom';
+import {CloudCircle} from "@mui/icons-material";
+import {Chip, Container, Stack, Typography} from "@mui/material";
+import {DashboardLayout} from "@toolpad/core";
+import {Outlet} from 'react-router-dom';
 
 
 function CustomAppTitle() {
     return (
         <Stack direction="row" alignItems="center" spacing={2}>
-            <CloudCircle fontSize="large" color="primary" />
+            <CloudCircle fontSize="large" color="primary"/>
             <Typography variant="h6">Spiral Community</Typography>
-            <Chip size="small" label="BETA" color="info" />
+            <Chip size="small" label="BETA" color="info"/>
         </Stack>
     );
 }
@@ -18,7 +18,7 @@ function CustomAppTitle() {
 const Layout = () => {
     return (
         <DashboardLayout hideNavigation
-                         slotProps={ {
+                         slotProps={{
                              toolbarAccount: {
                                  slotProps: {
                                      signInButton: {
@@ -28,11 +28,11 @@ const Layout = () => {
                                      },
                                  },
                              }
-                         } }
-         slots={{
-             appTitle: CustomAppTitle,
-         }}>
-            <Container sx={ { mt: 2 } }>
+                         }}
+                         slots={{
+                             appTitle: CustomAppTitle,
+                         }}>
+            <Container sx={{my: 2}}>
                 <Outlet/>
             </Container>
         </DashboardLayout>

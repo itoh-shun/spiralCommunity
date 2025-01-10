@@ -5,56 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b418acbc-fb76-4741-bbd2-38bff7798921" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/cache.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/spiralCommunity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/localBuildTest/LocalApi.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spiral-framework/library/SiValidator2/SiValidator2/Rules/InRule.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/MeController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/TagsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/UsersController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/components/DefinitionItem.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/UserInfo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/pages/Users.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/types/api/fetchTags.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/types/api/fetchUsers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/utils/apiClient.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/utils/apiMethods.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ui/src/utils/base64ToTemporaryURL.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/@types-codemirror-npm-5.60.15-35baadc322-cfad3f569d.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/@types-marked-npm-4.3.2-eb576ba405-c1107079d6.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/@types-prismjs-npm-1.26.5-5c39951991-d208b04ee9.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/@types-tern-npm-0.23.9-997cba3cf5-53f229c79e.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/codemirror-npm-5.65.18-debbbac10b-950015d587.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/codemirror-spell-checker-npm-1.1.2-85f6b7f455-e58de8f644.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/easymde-npm-2.18.0-1f9f5b619d-1f763bac31.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/markdown-to-jsx-npm-7.7.3-bcc462bf4d-3eef59b344.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/marked-npm-4.3.0-e7ef9e874f-0db6817893.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/mui-markdown-npm-1.2.5-de9d4ee992-8aa1a95535.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/prism-react-renderer-npm-2.4.1-b9eaf468f6-ddd5490a13.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/react-simplemde-editor-npm-5.2.0-b43ca53bef-3e47019f8c.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ui/.yarn/cache/typo-js-npm-1.2.5-ebfca7c4a0-7c71d7575f.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/phpunit.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpunit.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spiral-community.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/localBuildTest/LocalApi.php" beforeDir="false" afterPath="$PROJECT_DIR$/localBuildTest/LocalApi.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spiral-framework" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SiValidator2" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SiValidator2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SiValidator2/SiValidator2/Rules/DateRule.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SiValidator2/SiValidator2/Rules/DateRule.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SiValidator2/SiValidator2/SiValidator2.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SiValidator2/SiValidator2/SiValidator2.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/Request/HttpRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/Request/HttpRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralAuthManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralAuthManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralWeb.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter/SpiralConnecter/SpiralWeb.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spiral-framework/src/framework/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/spiral-framework/src/framework/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Auth/EntraController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Auth/EntraController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Middleware/RefreshTokenMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Middleware/RefreshTokenMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Middleware/TenantValidationMiddleware.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Middleware/TenantValidationMiddleware.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Services/OAuthService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Services/OAuthService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/routes/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/TagsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/TagsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/UsersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/app/Http/Controllers/Api/UsersController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/spiralCommunity/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/spiralCommunity/spiralCommunityApplication.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/spiralCommunity/spiralCommunityApplication.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/ui/eslint.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/.yarn/install-state.gz" beforeDir="false" afterPath="$PROJECT_DIR$/ui/.yarn/install-state.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/components/DefinitionItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/DefinitionItem.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/ui/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/UserInfo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/UserInfo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ui/src/pages/Users.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/ui/src/pages/Users.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ui/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ui/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,18 +51,28 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
+  <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/spiral-framework/library/SpiralConnecter" />
+    <option name="WARN_ABOUT_LARGE_FILES_LIMIT_MB" value="77" />
+  </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="none" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2rKjMxZZWnQm492kZorZPSlD1nM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -101,7 +90,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/itoshun/workspaces/spiralCommunity/ui/node_modules/typescript/lib",
+    "ts.external.directory.path": "/home/ito-shun/workspaces/spiralCommunity/ui/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -113,25 +102,25 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
       <window_info id="Robo tasks" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17864116" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20345053" />
       <window_info id="Commit" order="1" weight="0.17864116" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.16113281" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="Profiler" />
       <window_info anchor="bottom" id="TODO" />
       <window_info anchor="bottom" id="File Transfer" />
       <window_info anchor="bottom" id="Find" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.13870615" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.18113321" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.13870615" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="right" id="PR AI Assistant" />
       <window_info anchor="right" id="Endpoints" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
-      <window_info active="true" anchor="right" id="AIAssistant" order="1" visible="true" weight="0.33014446" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.24121094" />
       <window_info anchor="right" id="Database" order="2" weight="0.25" />
       <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
       <window_info anchor="right" id="Maven" order="4" weight="0.25" />
@@ -146,6 +135,10 @@
     </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+    <option name="sshConnectionType" value="PASSWORD" />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="デフォルトタスク">
       <changelist id="b418acbc-fb76-4741-bbd2-38bff7798921" name="変更" comment="" />
@@ -154,18 +147,38 @@
       <option name="presentableId" value="Default" />
       <updated>1736314617171</updated>
       <workItem from="1736314618412" duration="22974000" />
+      <workItem from="1736440882571" duration="8031000" />
+      <workItem from="1736475320501" duration="46000" />
+      <workItem from="1736475915192" duration="33000" />
+      <workItem from="1736476107608" duration="107000" />
+      <workItem from="1736476634370" duration="76000" />
+      <workItem from="1736476913969" duration="53000" />
+      <workItem from="1736477676753" duration="181000" />
+      <workItem from="1736478028777" duration="241000" />
+      <workItem from="1736478288329" duration="5778000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/src/spiralCommunity/routes/web.php</url>
-          <line>21</line>
+        <line-breakpoint enabled="true" log-message="true" suspend="NONE" type="javascript">
+          <url>file://$PROJECT_DIR$/ui/src/pages/UserInfo.tsx</url>
+          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -1,13 +1,8 @@
 <?php
 
-namespace spiralCommunity\App\Http\Controllers\Api ;
+namespace spiralCommunity\App\Http\Controllers\Api;
 
-use framework\Http\Request;
 use framework\Http\Controller;
-use framework\Http\View;
-use framework\Support\ServiceProvider;
-use SiLibrary\Collection;
-use spiralCommunity\App\Services\OAuthService;
 
 class TagsController extends Controller
 {
@@ -15,14 +10,14 @@ class TagsController extends Controller
     public function index(array $vars)
     {
         $tags = \SpiralDB::title('tags')->orderBy('id', 'asc')->value(
-            ['id', 'tag_name', 'tag_category'])
-        ->get();
+            ['tag_id', 'tag_name', 'tag_category'])
+            ->get();
 
         $tags_re = [];
 
-        foreach($tags as $tag) {
+        foreach ($tags as $tag) {
             $tags_re[] = [
-                'id' => $tag->id,
+                'id' => $tag->tag_id,
                 'name' => $tag->tag_name,
                 'category' => $tag->tag_category,
             ];

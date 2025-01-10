@@ -7,10 +7,11 @@ $env = require ".env.php";
 $config = require "./src/spiralCommunity/config/app.php";
 const TEST_ID = 'UtqofgmGNGcl_6525tCmEIvP-5FjcZHIrpvtkvxkpnI';
 
-function getUrl() {
+function getUrl()
+{
     global $env;
     global $config;
-    if(!empty($_SESSION['api_url'])) {
+    if (!empty($_SESSION['api_url'])) {
         return $_SESSION['api_url'];
     }
     $locator = "https://www.pi-pe.co.jp/api/locator";
@@ -63,7 +64,7 @@ function getUrl() {
     $parameters["signature"] = hash_hmac('sha1', $key, $env['deploy']['dev']['secret'], false);
 
     // JSON形式にエンコードします。
-    $json = json_encode(array_merge($parameters , $_GET , $_POST));
+    $json = json_encode(array_merge($parameters, $_GET, $_POST));
     // POSTで送信します。
     $stream = stream_context_create(
         array('http' => array(
@@ -87,9 +88,9 @@ function getUrl() {
 $url = getUrl();
 
 $parameters = array();
-if($_GET['_method'] !== 'GET'){
-    $parameters = array_map(function($data){
-        return urlencode($data);
+if ($_GET['_method'] !== 'GET') {
+    $parameters = array_map(function ($data) {
+        return rawurlencode($data);
     }, $_POST);
 }
 $parameters["_path"] = $_GET['_path']; // トークン
@@ -97,6 +98,7 @@ $parameters["_method"] = $_GET['_method']; // トークン
 
 $queryString = http_build_query($parameters);
 // ストリームコンテキストの設定
+
 $stream = stream_context_create(
     array('http' => array(
         'method' => 'POST', // POSTメソッドを指定
